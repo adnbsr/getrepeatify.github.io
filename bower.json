@@ -1,0 +1,23 @@
+{
+  "name": "A sample game",
+  "version": "1.0",
+  "authors": [
+    "Adnan Basar <adnanbasarr@gmail.com>"
+  ],
+  "description": "An amazing game lands here",
+  "keywords": [
+    "game"
+  ],
+  "license": "MIT",
+  "homepage": "notyet.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "tuktuk": "~1.0.0"
+  }
+}
