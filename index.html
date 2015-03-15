@@ -1,122 +1,218 @@
-<!doctype html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8" />
-    <title>Repeatify </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <link rel="stylesheet" href="css/site.css">
-    <link rel="stylesheet" href="css/site.theme.css">
-    <link rel="stylesheet" href="css/site.icons.css">
-
+    <!-- CHANGE TITLE AND META ACCORDINGLY -->
+    <title>Repeatify</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#ffffff">
+    <meta content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes" name="viewport">
+    <link rel="stylesheet" href="css/tidy.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="import" href="bower_components/paper-ripple/paper-ripple.html">
+    <link rel="import" href="bower_components/paper-fab/paper-fab.html">
+    <link rel="import" href="bower_components/core-icons/core-icons.html">
 </head>
 
-<body data-page="index" data-product="quojs">
-    <!-- ========================== HEADER ========================== -->
-    <header>
-        <div class="row">
-            <div class="column_6">
-                <h2 class="text">Repeatify</h2>
-            </div>
-            <nav class="column_4 align right" data-tuktuk="menu">
-                <a href="#getapp" class="margin_right">Download App</a>
-                <a href="#features" class="margin_right">Features</a>
-                <a href="#about" class="margin_right">About</a>
-                <a href="#contact" class="margin_right">Contact</a>
+<body>
 
-            </nav>
+    <div class="container" style="width: 100%">
+        <!-- COVER IMAGE AND FLOATING BUTTON -->
+        <div class="cover-image"></div>
+        <div style="height: 50%; width: 100%; position: absolute; top: 0">
+            <!-- REPLACE WITH YOUR APP URL -->
+            <a href="YOUR_APP_URL_HERE">
+                <paper-fab class="wow fadeInUp desktop-fab" icon="shop"></paper-fab>
+            </a>
         </div>
-    </header>
 
-    <section class="bck repeatify landing">
-        <div class="overlay">
-            <div class="row">
-                <div class="column_10 offset_1">
-                    <h1>Repeatify</h1>
-                    <h2 class="margin-bottom">Do you insist to repeat this song?</h2>
+        <!-- ICON, NAME AND DESCRIPTION -->
+        <div class="wow fadeInUp content-card">
+            <!-- REPLACE WITH YOUR APP URL -->
+            <a href="YOUR_APP_URL_HERE">
+                <paper-fab class="mobile-fab" icon="shop"></paper-fab>
+            </a>
+
+            <div class="icon-and-title-flex">
+                <img src="img/ic_launcher.png" class="appicon"></img>
+                <div class="title-container">
+                    <!-- REPLACE WITH YOUR APP NAME -->
+                    <span class="text-title">Repeatify</span>
+                    <br>
+                    <div class="intertext-padding"></div>
+                    <!-- REPLACE WITH YOUR DEV NAME -->
+                    <span class="text-subtitle">Andromeda Labs</span>
+                    <br>
+                    <div class="intertext-padding"></div>
+                    <!-- REPLACE WITH YOUR APP PRICE -->
+                    <span class="text-description">Free</span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <!-- REPLACE WITH YOUR APP DESCRIPTION -->
+            <span class="text-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida tristique condimentum. Quisque tempus eleifend sollicitudin. Nulla congue in erat et euismod. Nulla pellentesque leo id dui tempor lobortis. Phasellus sollicitudin ut massa
+                eu dictum. Pellentesque viverra a diam a feugiat. Morbi non lorem et ex finibus elementum. Morbi pharetra risus eget quam pellentesque, sed laoreet purus malesuada. Aenean ut nibh quis lacus mollis euismod. Maecenas pellentesque magna
+                vehicula convallis hendrerit. Sed maximus urna sed suscipit facilisis. Aenean posuere, ligula quis fermentum vulputate, quam nisi pulvinar felis, et sodales ligula augue sit amet nunc. Curabitur eget orci et tortor rhoncus consequat et
+                id nunc.
+        </div>
+
+
+
+        <!-- OTHER APPS BY YOU -->
+        <div class="wow fadeInUp content-works">
+            <br>
+            <!-- REPLACE WITH YOUR DEV NAME -->
+            <span class="text-subtitle padtopandbottom">Features</span>
+            <br>
+            <!-- If needed, delete from here -->
+            <div class="works-card">
+                <a href="">
+                    <div class="works-subcard">
+                        <img class="top-corners-rounded" src="img/otherapps/placeholder_one.png" style="width: 100%"></img>
+                        <span class="work-title">App Name</span>
+                        <paper-ripple fit></paper-ripple>
+                    </div>
+                </a>
+            </div>
+            <!-- To here-->
+
+            <!-- If needed, delete from here -->
+            <div class="works-card">
+                <a href="">
+                    <div class="works-subcard">
+                        <img class="top-corners-rounded" src="img/otherapps/placeholder_two.png" style="width: 100%"></img>
+                        <span class="work-title">App Name</span>
+                        <paper-ripple fit></paper-ripple>
+                    </div>
+                </a>
+            </div>
+            <!-- To here-->
+
+            <!-- If needed, delete from here -->
+            <div class="works-card">
+                <a href="">
+                    <div class="works-subcard">
+                        <img class="top-corners-rounded" src="img/otherapps/placeholder_three.png" style="width: 100%"></img>
+                        <span class="work-title">App Name</span>
+                        <paper-ripple fit></paper-ripple>
+                    </div>
+                </a>
+            </div>
+            <!-- To here-->
+
+            <!-- If needed, delete from here -->
+            <div class="works-card">
+                <a href="">
+                    <div class="works-subcard">
+                        <img class="top-corners-rounded" src="img/otherapps/placeholder_four.png" style="width: 100%"></img>
+                        <span class="work-title">App Name</span>
+                        <paper-ripple fit></paper-ripple>
+                    </div>
+                </a>
+            </div>
+            <!-- To here-->
+
+            <!-- If needed, delete from here -->
+            <div class="works-card">
+                <a href="">
+                    <div class="works-subcard">
+                        <img class="top-corners-rounded" src="img/otherapps/placeholder_five.png" style="width: 100%"></img>
+                        <span class="work-title">App Name</span>
+                        <paper-ripple fit></paper-ripple>
+                    </div>
+                </a>
+            </div>
+            <!-- To here-->
+
+            <!-- If needed, delete from here -->
+            <div class="works-card">
+                <a href="	">
+                    <div class="works-subcard">
+                        <img class="top-corners-rounded" src="img/otherapps/placeholder_six.png" style="width: 100%"></img>
+                        <span class="work-title">App Name</span>
+                        <paper-ripple fit></paper-ripple>
+                    </div>
+                </a>
+            </div>
+            <!-- To here-->
+        </div>
+        <br>
+        <br>
+
+
+        <!-- APP DETAILS -->
+        <div class="wow fadeInUp content-card" style="margin-top: 0;">
+            <span class="text-subtitle">Details</span>
+            <br>
+            <br>
+            <br>
+            <div>
+                <!-- REPLACE WITH YOUR APP DETAILS ACCORDINGLY -->
+                <div class="detail-item">
+                    <core-icon class="details-icon" icon="turned-in"></core-icon>
+                    <span class="text-description">Music and Video</span>
                 </div>
             </div>
         </div>
-    </section>
 
-    <section id="features" class="bck dark padding text center">
-        <div class="row padding-bottom">
-            <div class="column_10 offset_1">
-                <h1 class="text book color theme">Features</h1>
-                <h4>
-                    Quam sunt quos minima consequatur dolore quaerat vel recusandae numquam ab qui dignissimos doloribus molestiae pariatur magnam libero nam consectetur asperiores maiores.
-                </h4>
+        <!-- SPACE BELOW DETAILS -->
+        <div class="empty-space">
+            <div class="meta-container">
+                <div class="wow fadeInUp detail-item watermark">
+                    <core-icon class="details-icon" icon="polymer"></core-icon>
+                </div>
+                <div class="wow fadeInUp detail-item watermark credits">
+                    <span class="text-description lightgray credits-text">Made with passion by <a href="http://andromedalabs.org">Andromeda Labs</a>
+                    </span>
+                </div>
             </div>
         </div>
 
-        <div class="row padding-top">
-            <div class="column_3">
-                <h2 class="icon user"></h2>
-                <h5 class="text normal">Lorem ipsum dolor sit</h5>
-                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.</small>
-            </div>
-            <div class="column_3">
-                <h2 class="icon group"></h2>
-                <h5 class="text normal">Lorem ipsum dolor sit</h5>
-                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.</small>
-            </div>
-            <div class="column_3">
-                <h2 class="icon cog"></h2>
-                <h5 class="text normal">Lorem ipsum dolor sit</h5>
-                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.</small>
-            </div>
-            <div class="column_3">
-                <h2 class="icon twitter"></h2>
-                <h5 class="text normal">Lorem ipsum dolor sit</h5>
-                <small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, ipsam, explicabo, fugit in magni delectus aliquid.</small>
-            </div>
-        </div>
-    </section>
-
-    <section class="bck light padding">
-        <div class="row text thin center">
-            <div class="column_10 offset_1">
-                <h1 class="text book color theme">Lorem ipsum dolor sit amet</h1>
-                <h4>
-                    Quam sunt quos minima consequatur dolore quaerat vel recusandae numquam ab qui dignissimos doloribus molestiae pariatur magnam libero nam consectetur asperiores maiores.
-                </h4>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="landing bck site">
-        <div class="row text center">
-            <div class="column_10 offset_1">
-                <h2 class="text bold color theme">Lorem ipsum dolor sit amet</h2>
-                <h4 class="text book italic">Quam sunt quos minima consequatur</h4>
-                <a href="#" class="button large margin-top">Yes, please!</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="padding bck light">
-        <div class="row margin-bottom">
-            <div class="column_10 offset_1 text center">
-                <h1 class="color book theme">About</h1>
-            </div>
-        </div>
-
-    </section>
 
 
 
-    <footer class="padding align center text small bck light">
-        <div class="row">
-            <div class="offset_3 column_6">
-                <smalL>Made with love in
-                    <strong>Andromeda Labs</strong>
-                </smalL>
-            </div>
-        </div>
-    </footer>
 
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script src="bower_components/tuktuk/tuktuk.js"></script>
+        <!-- ===================================================================================================== -->
+
+        <!-- JAVASCRIPT -->
+
+        <!-- Animations -->
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+
+        <!-- Scrollwheel Smoothing -->
+        <script>
+            $(function() {
+            	var $window = $(window);
+            	var scrollTime = 0.5;
+            	var scrollDistance = 270;
+            	$window.on("mousewheel DOMMouseScroll", function(event) {
+
+            		event.preventDefault();
+            		var delta = event.originalEvent.wheelDelta / 120 || -event.originalEvent.detail / 3;
+            		var scrollTop = $window.scrollTop();
+            		var finalScroll = scrollTop - parseInt(delta * scrollDistance);
+            		TweenMax.to($window, scrollTime, {
+            			scrollTo: {
+            				y: finalScroll,
+            				autoKill: true
+            			},
+            			ease: Power1.easeOut,
+            			overwrite: 5
+
+            		});
+            	});
+            });
+        </script>
 </body>
 
 </html>
